@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="5dp">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Wonderful Veda AyurvedaWonderful Veda AyurvedaWonderful Veda Ayurveda"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        app:layout_constraintStart_toEndOf="@+id/dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bio"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:text="gfdgfdg"
+        android:textSize="12dp"
+        android:padding="5dp"
+        android:maxLines="2"
+        app:layout_constraintStart_toEndOf="@+id/dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toBottomOf="@+id/bio"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/thumbnail"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/ic_like"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/heart"
+        app:layout_constraintTop_toBottomOf="@+id/thumbnail"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/ic_comment"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/comment"
+        app:layout_constraintTop_toBottomOf="@+id/thumbnail"
+        app:layout_constraintStart_toEndOf="@+id/ic_like"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/ic_share"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/share"
+        app:layout_constraintTop_toBottomOf="@+id/thumbnail"
+        app:layout_constraintStart_toEndOf="@+id/ic_comment"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/views"
+        android:padding="10dp"
+        android:textSize="12dp"
+        android:text="100 views"
+        app:layout_constraintTop_toBottomOf="@+id/thumbnail"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/likes"
+        android:padding="5dp"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        tools:text="29 likes"
+        app:layout_constraintTop_toBottomOf="@+id/ic_like"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:padding="5dp"
+        android:textSize="14dp"
+        android:maxLines="3"
+        tools:text="The only post meal asana to enkindle digestive agni"
+        app:layout_constraintTop_toBottomOf="@+id/likes"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:padding="10dp"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        tools:text="2 days ago"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
